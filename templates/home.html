@@ -1,0 +1,114 @@
+<html>
+<body>
+    <div class="login">
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Accept loan or not?</legend>
+        </h1>
+<br><br>
+
+<div class="mb-3">
+            <label class="form-label">Age</label>
+            <input class="form-control" type="number" name="Age"
+                placeholder="Enter your Age" min='0' max='100' />
+        </div>
+<br><br>
+
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select class="form-control" name="Gender" placeholder="Enter you Gender" required>
+                <option class="placeholder" selected disabled value="">Select your Gender</option>
+                <option value="M">
+                    Male
+                </option>
+                <option value="F">
+                    Female
+                </option>
+                <option value="O">
+                    Others
+                </option>
+            </select>
+        </div>
+
+<br><br>
+        <div class="mb-3">
+            <label class="form-label">EXPERIENCE</label>
+            <input class="form-control" type="number" name="Experience"
+                placeholder="Enter your Experience" min='0' max='100' />
+        </div>
+        <br><br>
+
+
+          <div class="mb-3">
+            <label class="form-label">income in thousands</label>
+            <input class="form-control" type="number" name="Income"
+                placeholder="Enter your income" min='0' max='100000' />
+        </div>
+<br><br>
+           <div class="mb-3">
+            <label class="form-label">family no</label>
+            <input class="form-control" type="number" name="Family"
+                placeholder="Enter your fam number" min='0' max='20' />
+        </div>
+<br><br>
+             <div class="mb-3">
+            <label class="form-label">CCAvg</label>
+            <input class="form-control" type="number" name="CCAvg"
+                placeholder="Enter your CCAvg" min='0' max='2000' />
+        </div>
+<br><br>
+        
+        <div class="mb-3">
+            <label class="form-label">Education</label>
+            <select class="form-control" name="Education" placeholder="Enter you level edu" required>
+                <option class="placeholder" selected disabled value="">Select Edu level</option>
+                <option value="a">
+                    advanced
+                </option>
+                <option value="b">
+                    bachlors
+                </option>
+                <option value="m">
+                    masters
+                </option>
+            </select>
+        </div>
+
+<br><br>
+
+        
+        <div class="mb-3">
+            <label class="form-label">Mortgage in thousands</label>
+            <input class="form-control" type="number" name="Mortgage"
+                placeholder="Enter your Mortgage" min='0' max='1000' />
+        </div>
+<br><br>
+
+         <div class="mb-3">
+            <label class="form-label">Home Ownership</label>
+            <select class="form-control" name="HomeOwnership" placeholder="Enter type of home" required>
+                <option class="placeholder" selected disabled value="">Select home Ownership</option>
+                <option value="Home Owner">
+                    Home Owner
+                </option>
+                <option value="Rent">
+                    Rent
+                </option>
+                <option value="HomeMortage">
+                    Home Mortage
+                </option>
+            </select>
+        </div>
+
+
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Check" required />
+        </div>
+    </form>
+    <h2>
+        {{results}}
+    </h2>
+   <body>
+</html>
