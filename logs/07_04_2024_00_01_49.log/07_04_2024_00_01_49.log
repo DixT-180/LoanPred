@@ -1,0 +1,4 @@
+[2024-07-04 00:01:50,083] 97 werkzeug - WARNING -  * Debugger is active!
+[2024-07-04 00:01:50,102] 97 werkzeug - INFO -  * Debugger PIN: 133-566-388
+[2024-07-04 00:02:05,731] 97 werkzeug - INFO - 127.0.0.1 - - [04/Jul/2024 00:02:05] "GET /predictdata HTTP/1.1" 200 -
+[2024-07-04 00:02:21,795] 97 werkzeug - INFO - 127.0.0.1 - - [04/Jul/2024 00:02:21] "POST /predictdata HTTP/1.1" 200 -
